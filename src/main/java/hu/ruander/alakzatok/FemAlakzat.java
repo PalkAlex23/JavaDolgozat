@@ -12,7 +12,8 @@ public abstract class FemAlakzat {
     public static double getFajsuly() {
         return fajsuly;
     }
-//
-//    public double suly() {
-//    }
+
+    public double suly() {
+        return terfogat() * fajsuly;
+    }
 }

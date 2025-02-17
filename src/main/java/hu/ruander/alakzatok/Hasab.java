@@ -2,33 +2,32 @@ package hu.ruander.alakzatok;
 
 public class Hasab extends FemAlakzat {
 
-    private int a, b, m;
-    private double d, d1, d2;
+    private double a, b, m;
 
     public Hasab(int a, int b, int m) {
         this((double) a, (double) b, (double) m);
     }
 
-    public Hasab(double d, double d1, double d2) {
+    public Hasab(double a, double b, double m) {
         super();
-        this.d = d;
-        this.d1 = d1;
-        this.d2 = d2;
+        this.a = a;
+        this.b = b;
+        this.m = m;
     }
 
     public double terfogat() {
         return a*b*m;
     }
 
-    public int getA() {
+    public double getA() {
         return a;
     }
 
-    public int getB() {
+    public double getB() {
         return b;
     }
 
-    public int getM() {
+    public double getM() {
         return m;
     }
 }
